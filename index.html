@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A new Walkrunners is in the works. Connect with us or schedule time while our new site is under construction." />
+  <meta name="theme-color" content="#F4EEE0" />
+  <title>Walkrunners — Coming Soon</title>
+  <link rel="preload" href="assets/walkrunners-logo.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="brand" aria-label="Walkrunners">
+      <img
+        class="brand__logo"
+        src="assets/walkrunners-logo.png"
+        alt="Walkrunners"
+        width="1024"
+        height="1024"
+      />
+    </header>
+
+    <main class="main-content">
+      <section class="hero" aria-labelledby="coming-soon-title">
+        <p class="eyebrow">Coming soon</p>
+
+        <h1 id="coming-soon-title" class="hero__title">
+          <span>A new walkrunners is</span>
+          <em>in the works.</em>
+        </h1>
+
+        <p class="hero__copy">
+          This site will return soon with a snappy new look and client portal.<br />
+          Until then, feel free to connect or schedule time<br class="desktop-break" />
+          and a team member will reach out.
+        </p>
+
+        <div class="actions" aria-label="Contact options">
+          <a class="button button--primary" href="mailto:chris@walkrunners.com">Connect with us</a>
+          <a class="button button--secondary" href="https://calendly.com/chris-walkrunners">Schedule time</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year">2026</span> Walk Runners</p>
+    </footer>
+  </div>
+
+  <script>
+    // Keep the copyright year current after 2026.
+    document.getElementById('year').textContent = Math.max(2026, new Date().getFullYear());
+
+  </script>
+</body>
+</html>
